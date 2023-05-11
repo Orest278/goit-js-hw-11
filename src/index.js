@@ -23,11 +23,6 @@ async function handleSearch(event) {
 
   const searchQuery = event.target.elements.searchQuery.value.trim();
 
-  if (!searchQuery) {
-    // Notiflix.Notify.warning("Search query is empty. Please enter a keyword.");
-    return;
-  }
-
   try {
     const response = await axios.get(BASE_URL, {
       params: {
