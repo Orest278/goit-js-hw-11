@@ -19,3 +19,11 @@
     flex-wrap: wrap;
     gap: 10px;
 }
+
+.button-load-more{
+    text-align: center;
+}
+
+.load-more{
+    padding: 10px;
+}
