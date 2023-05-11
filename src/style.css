@@ -1,3 +1,15 @@
 .load-more.is-hidden {
     display: none;
 }
+
+.search-form {
+    text-align: center;
+    background-color: blueviolet;
+    padding: 30px;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
