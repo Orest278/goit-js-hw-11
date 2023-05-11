@@ -12,12 +12,14 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
 }
 
 .gallery{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
 }
 
 .button-load-more{
@@ -26,4 +28,8 @@
 
 .load-more{
     padding: 10px;
+}
+
+.info-item{
+    text-align: center;
 }

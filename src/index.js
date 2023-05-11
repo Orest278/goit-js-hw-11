@@ -99,19 +99,19 @@ function renderGallery(images) {
     const markup = images.map(
         ({ webformatURL, tags, likes, views, comments, downloads, }) => {
              return `<div class="photo-card">
-  <img src="${webformatURL}" alt="${tags}" width="450" height="300" loading="lazy" />
+  <img src="${webformatURL}" alt="${tags}" width="350" height="200" loading="lazy" />
   <div class="info">
     <p class="info-item">
-      <b>${likes}Likes</b>
+      <b>Likes </br>${likes}</b>
     </p>
     <p class="info-item">
-      <b>${views}Views</b>
+      <b>Views </br>${views}</b>
     </p>
     <p class="info-item">
-      <b>${comments}Comments</b>
+      <b>Comments </br>${comments}</b>
     </p>
     <p class="info-item">
-      <b>${downloads}Downloads</b>
+      <b>Downloads </br>${downloads}</b>
     </p>
   </div>
 </div>`
