@@ -24,7 +24,7 @@ async function handleSearch(event) {
   const searchQuery = event.target.elements.searchQuery.value.trim();
 
   if (!searchQuery) {
-    Notiflix.Notify.warning("Search query is empty. Please enter a keyword.");
+    // Notiflix.Notify.warning("Search query is empty. Please enter a keyword.");
     return;
   }
 
@@ -104,7 +104,7 @@ function renderGallery(images) {
     const markup = images.map(
         ({ webformatURL, tags, likes, views, comments, downloads, }) => {
              return `<div class="photo-card">
-  <img src="${webformatURL}" alt="${tags}" loading="lazy" />
+  <img src="${webformatURL}" alt="${tags}" width="450" height="300" loading="lazy" />
   <div class="info">
     <p class="info-item">
       <b>${likes}Likes</b>
